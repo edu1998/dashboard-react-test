@@ -18,3 +18,12 @@ code {
   display: flex;
   flex-direction: row;
 }
+
+.align-end {
+  text-align: end;
+}
+
+
+.oblique_font {
+  font-style: oblique;
+}

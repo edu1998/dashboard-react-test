@@ -49,3 +49,61 @@ export const TABLE_DATA = [
         acos: '24,49%'
     },
 ]
+
+export const TABLE_COLUMNS = [
+    {
+        title: 'Mes',
+        dataIndex: 'mes',
+        key: 'mes',
+    },
+    {
+        title: 'Sku',
+        dataIndex: 'sku',
+        key: 'sku',
+    },
+    {
+        title: 'Tiendas',
+        dataIndex: 'tienda',
+        key: 'tienda',
+    },
+    {
+        title: 'Visitas',
+        dataIndex: 'visitas',
+        key: 'visitas',
+    },
+    {
+        title: 'Inversion',
+        dataIndex: 'inversion',
+        key: 'inversion',
+    },
+    {
+        title: 'Clics',
+        dataIndex: 'clics',
+        key: 'clics',
+    },
+    {
+        title: 'Cth',
+        dataIndex: 'cth',
+        key: 'cth',
+    },
+    {
+        title: 'Cpc',
+        dataIndex: 'cpc',
+        key: 'cpc',
+    },
+    {
+        title: 'Orders',
+        dataIndex: 'orders',
+        key: 'orders',
+    },
+    {
+        title: 'Ventas',
+        dataIndex: 'ventas',
+        key: 'ventas',
+    },
+    {
+        title: 'Acos',
+        dataIndex: 'acos',
+        key: 'acos',
+    },
+]
