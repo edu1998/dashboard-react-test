@@ -8,8 +8,8 @@ interface ProgressChartListProps {
 
 const ProgressChartList: FC<ProgressChartListProps> = ({progressList}) => (
     <>
-        {progressList?.map(progress => (
-            <div> <ProgressChart {...progress} /></div>
+        {progressList?.map((progress, ind) => (
+            <div key={ind}> <ProgressChart {...progress} /></div>
         ))}
     </>
 )

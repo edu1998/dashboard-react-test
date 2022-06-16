@@ -5,15 +5,3 @@
   background: linear-gradient(#444444, #333333);
   color: #bbbbbb;
 }
-.page{
-  display: flex;
-  height: 100vh;
-}
-
-.page_content {
-  margin-top: 15px;
-  background: #fafafa;
-  flex: 1 0;
-  height: 100%;
-  color: #979797;
-}

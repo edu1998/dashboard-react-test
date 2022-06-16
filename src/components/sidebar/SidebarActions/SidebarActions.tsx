@@ -10,7 +10,7 @@ interface SidebarActionsProps {
 const SidebarActions: FC<SidebarActionsProps> = ({ actionList  }) => (
     <div className="sidebar_actions">
         <div className="sidebar_actions_list">
-            {actionList.map(action => (<ActionButton active={action.active} Icon={action.Icon}/>))}
+            {actionList.map(action => (<ActionButton key={action.Icon} active={action.active} Icon={action.Icon}/>))}
         </div>
     </div>
 )

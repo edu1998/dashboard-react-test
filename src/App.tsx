@@ -1,22 +1,26 @@
 import React from 'react';
 import './App.css';
-import Sidebar from "./components/sidebar/Sidebar";
-import Card from "./components/card/Card";
-import CardHeader from "./components/card/cardHeader/Card/cardHeader";
-import CardBody from "./components/card/cardBody/Card/cardBody";
-import Page from "./components/Page/Page";
+import CustomRouters from "./components/CustomRouters/CustomRouters";
+import {ROUTER_DATA as dataRouters} from "./services/router-data";
+import {Link} from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <div className="page">
-        <Sidebar/>
-        <div className="page_content">
-            <Page/>
+    return (
+        <div className="App">
+            <h1>Welcome to React Router!</h1>
+
+            <nav>
+                    <Link to="/">Home </Link>
+                    <Link to="/dash">Dash </Link>
+                    <Link to="/dash/sales">Sales </Link>
+            </nav>
+
+            <br/><br/>
+
+            <CustomRouters dataRouters={dataRouters}/>
+
         </div>
-      </div>
-    </div>
-  );
+    );
 }
 
 export default App;
