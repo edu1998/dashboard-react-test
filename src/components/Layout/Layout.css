@@ -1,0 +1,33 @@
+:root {
+    --backgroundColor: #F2F2F2
+}
+
+.layout-content-header {
+    background-color: var(--backgroundColor);
+    height: 70px;
+    width: 100vw;
+}
+
+.layout-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.layout-content-sidebar {
+    background-color: var(--backgroundColor);
+    width: 210px;
+    min-width: 180px;
+    height: 100vh;
+}
+
+.layout-content-sidebar__close {
+    background-color: var(--backgroundColor);
+    width: 20px;
+    min-width: 15px;
+    height: 100vh;
+}
+
+.layout-content-body {
+    flex: 1;
+    margin: 15px
+}

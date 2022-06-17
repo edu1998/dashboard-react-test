@@ -1,0 +1,12 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    height: 100%;
+
+}
+
+.navbar-content-custom {
+    border: solid 1px black;
+    flex-grow: 5;
+}

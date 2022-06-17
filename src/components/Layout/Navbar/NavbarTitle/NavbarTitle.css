@@ -1,0 +1,20 @@
+.navbar-content-title {
+    color: #0F4C81;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+h1, h2, h3 {
+    color: #0F4C81;
+}
+
+.navbar-title-label{
+    margin: 0 0 0 10px;
+    font-size: 35px;
+}
+
+.navbar-subtitle-label {
+    margin-top: 15px;
+    margin-left: auto;
+}
