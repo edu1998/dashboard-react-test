@@ -1,0 +1,33 @@
+.container-menu {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    top: -25px;
+    flex-direction: column;
+    padding: 10px 10px;
+    font-style: normal;
+    font-weight: 500;
+    gap: 28px;
+    color: #6c6c6c;
+}
+
+.container-menu a {
+    text-decoration: none;
+    color: #6c6c6c;
+    font-size: 15px
+
+}
+
+.container-menu-item {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.container-menu-item__active {
+    color: #0F4C81 !important;
+}
+.container-menu-item-row {
+ margin-left: -5px;
+}

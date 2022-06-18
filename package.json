@@ -12,6 +12,8 @@
     "@types/react": "^18.0.12",
     "@types/react-dom": "^18.0.5",
     "antd": "^4.21.2",
+    "primeicons": "^5.0.0",
+    "primereact": "^8.1.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-icons": "^4.4.0",

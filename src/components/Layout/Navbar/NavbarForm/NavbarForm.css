@@ -1,0 +1,19 @@
+.navbar-form {
+    display: flex;
+    gap: 30px;
+}
+
+.form-sidebar-input-text-sm {
+    font-size: 13px;
+    padding: 5px 0.65625rem;
+    border-radius: 0;
+}
+
+.p-dropdown-label {
+    padding: 0;
+    font-size: 13px;
+}
+
+.p-dropdown-trigger {
+    justify-content: end;
+}

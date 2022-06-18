@@ -1,7 +1,9 @@
 :root {
     --backgroundColor: #F2F2F2
 }
-
+.layout{
+    background-color: var(--backgroundColor);
+}
 .layout-content-header {
     background-color: var(--backgroundColor);
     height: 70px;
@@ -11,12 +13,12 @@
 .layout-content {
     display: flex;
     flex-direction: row;
+    margin-right: 15px;
 }
 
 .layout-content-sidebar {
     background-color: var(--backgroundColor);
-    width: 210px;
-    min-width: 180px;
+    min-width: 235px;
     height: 100vh;
 }
 
@@ -29,5 +31,6 @@
 
 .layout-content-body {
     flex: 1;
-    margin: 15px
+    padding: 15px;
+    background-color: white;
 }
