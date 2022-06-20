@@ -2,12 +2,12 @@
     display: flex;
     height: 100vh;
     position: relative;
-    top: -25px;
+    top: -15px;
     flex-direction: column;
     padding: 10px 10px;
     font-style: normal;
     font-weight: 500;
-    gap: 28px;
+    gap: 20px;
     color: #6c6c6c;
 }
 
@@ -16,6 +16,32 @@
     color: #6c6c6c;
     font-size: 15px
 
+}
+
+.container-menu-parent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container-menu-parent__child {
+    background-color: #dadfeb;
+    padding: 5px 20px;
+    border-radius: 4px
+}
+
+.container-menu-parent__child__active {
+    background-color: #6c82ab;
+}
+
+.container-menu-children {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container-menu-children__ischild {
+    margin-left: 15px
 }
 
 .container-menu-item {

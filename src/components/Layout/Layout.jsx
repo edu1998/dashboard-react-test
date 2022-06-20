@@ -3,47 +3,23 @@ import {useState} from "react";
 import './Layout.css'
 
 import {AiOutlineUp} from "react-icons/ai";
-import {BsHouseDoorFill} from "react-icons/bs";
-import {IoIosRocket} from "react-icons/io";
 
 
 import Navbar from "./Navbar/Navbar";
 import Sidebar from "./Sidebar/Sidebar";
 import NavbarForm from "./Navbar/NavbarForm/NavbarForm";
 import Menu from "./Sidebar/Menu/Menu";
+import {MENU_ITEMS_DEFAULT as menuItems} from "../../services/menu-item-default";
 
 
 
 const Layout = ({children}) => {
+
     const [openSidebar, setOpenSidebar] =  useState(true);
 
-    const items = [
-        {
-            label: 'Mis Productos',
-            icon: BsHouseDoorFill,
-        },
-        {
-            label: 'Maestros',
-            icon: IoIosRocket,
-        },
-        {
-            label: 'Ingreso Paquetes',
-            icon: IoIosRocket,
-            active: true,
-        },
-        {
-            label: 'Gestion De Repartos',
-            icon: IoIosRocket,
-        },
-        {
-            label: 'Control de Repartos',
-            icon: IoIosRocket,
-        },
-        {
-            label: 'Servicio de usuarios',
-            icon: IoIosRocket,
-        }
-    ]
+
+    const menuSidebarClick = (items) => console.log(items);
+
     return (
             <div className="layout">
                 <div className="layout-content-header">
@@ -58,7 +34,7 @@ const Layout = ({children}) => {
                 <div className="layout-content">
                     <div className={`layout-content-sidebar${!openSidebar ? '__close' : ''}`}>
                         <Sidebar status={openSidebar} onChangeStatus={() => setOpenSidebar(!openSidebar)}>
-                            {openSidebar && <Menu items={items}/>}
+                            {openSidebar && <Menu items={menuItems} handleClick={menuSidebarClick}/>}
                         </Sidebar>
                     </div>
                     <div className="layout-content-body">

@@ -18,7 +18,8 @@
 
 .layout-content-sidebar {
     background-color: var(--backgroundColor);
-    min-width: 235px;
+    min-width: 255px;
+    max-width: 260px;
     height: 100vh;
 }
 
