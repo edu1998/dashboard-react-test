@@ -7,11 +7,13 @@ import CustomRouters from "./components/CustomRouters/CustomRouters";
 import {ROUTER_DATA as dataRouters} from "./services/router-data";
 import {Link} from "react-router-dom";
 import Layout from "./components/Layout/Layout";
+import {MENU_ITEMS_DEFAULT as menuItems} from "./services/menu-item-default";
+
 
 function App() {
     return (
         <div className="App">
-            <Layout>
+            <Layout menuItems={menuItems}>
                 <></>
                 <h1>Welcome to React Router!</h1>
 

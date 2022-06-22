@@ -9,16 +9,13 @@ import Navbar from "./Navbar/Navbar";
 import Sidebar from "./Sidebar/Sidebar";
 import NavbarForm from "./Navbar/NavbarForm/NavbarForm";
 import Menu from "./Sidebar/Menu/Menu";
-import {MENU_ITEMS_DEFAULT as menuItems} from "../../services/menu-item-default";
 
 
 
-const Layout = ({children}) => {
+const Layout = ({children, menuItems}) => {
 
     const [openSidebar, setOpenSidebar] =  useState(true);
 
-
-    const menuSidebarClick = (items) => console.log(items);
 
     return (
             <div className="layout">
@@ -34,7 +31,7 @@ const Layout = ({children}) => {
                 <div className="layout-content">
                     <div className={`layout-content-sidebar${!openSidebar ? '__close' : ''}`}>
                         <Sidebar status={openSidebar} onChangeStatus={() => setOpenSidebar(!openSidebar)}>
-                            {openSidebar && <Menu items={menuItems} handleClick={menuSidebarClick}/>}
+                            {openSidebar && <Menu items={menuItems} />}
                         </Sidebar>
                     </div>
                     <div className="layout-content-body">

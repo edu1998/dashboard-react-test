@@ -22,7 +22,7 @@ export const ROUTER_DATA: RouterDataType[] = [
                 path: 'sales',
                 title: 'Sales',
                 rol: ['ADMIN'],
-                private: true,
+                private: false,
                 Element: ExampleThirdPage
             }
         ]

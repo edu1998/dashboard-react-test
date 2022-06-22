@@ -18,6 +18,11 @@
 
 }
 
+.container-menu-a__active_child {
+    border-radius: 4px;
+    padding: 5px 20px;
+}
+
 .container-menu-parent {
     display: flex;
     flex-direction: column;
@@ -26,12 +31,11 @@
 
 .container-menu-parent__child {
     background-color: #dadfeb;
-    padding: 5px 20px;
-    border-radius: 4px
 }
 
 .container-menu-parent__child__active {
     background-color: #6c82ab;
+    color: white !important;
 }
 
 .container-menu-children {
