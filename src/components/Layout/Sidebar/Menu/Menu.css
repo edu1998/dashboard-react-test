@@ -55,6 +55,10 @@
     cursor: pointer;
 }
 
+.container-menu-item-disabled a {
+    pointer-events: none;
+}
+
 .container-menu-item__active {
     color: #0F4C81 !important;
 }

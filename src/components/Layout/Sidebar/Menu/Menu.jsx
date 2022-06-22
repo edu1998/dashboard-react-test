@@ -20,7 +20,7 @@ const RenderItems = ({items, isChildren }) => {
             return (
                     <div key={index} className={`container-menu-parent`}>
                         <div
-                            className={`container-menu-item  ${isChildren ? 'container-menu-parent__child' : ''}`}
+                            className={`container-menu-item ${item?.children ? 'container-menu-item-disabled' : ''}  ${isChildren ? 'container-menu-parent__child' : ''}`}
                             onClick={() => handleClickItem(item)}
                         >
                             {!isChildren && (item?.children && item.open ?  <MdOutlineKeyboardArrowDown className="container-menu-item-row" size={20}/> : <MdOutlineKeyboardArrowRight className="container-menu-item-row" size={20}/>) }

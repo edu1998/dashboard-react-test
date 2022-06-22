@@ -8,16 +8,6 @@ export const MENU_ITEMS_DEFAULT = [
         icon: BsHouseDoorFill,
         path: '/'
     },
-    // {
-    //     key: '2',
-    //     label: 'Maestros',
-    //     icon: IoIosRocket,
-    // },
-    // {
-    //     key: '3',
-    //     label: 'Ingreso Paquetes',
-    //     icon: IoIosRocket,
-    // },
     {
         key: '4',
         label: 'Gestion De Repartos',
@@ -28,29 +18,14 @@ export const MENU_ITEMS_DEFAULT = [
                 key: '4.1',
                 label: 'Posibilidad de en dos lineas',
                 icon: IoIosRocket,
-                path: '/dash/sales'
+                path: '/dash/products'
             },
             {
                 key: '4.2',
                 label: 'Posibilidad de en dos lineas',
                 icon: IoIosRocket,
-                path: '/'
+                path: '/dash/sales'
             },
-            // {
-            //     key: '4.3',
-            //     label: 'Posibilidad de en dos lineas',
-            //     icon: IoIosRocket,
-            // }
         ]
     },
-    // {
-    //     key: '5',
-    //     label: 'Control de Repartos',
-    //     icon: IoIosRocket,
-    // },
-    // {
-    //     key: '6',
-    //     label: 'Servicio de usuarios',
-    //     icon: IoIosRocket,
-    // }
 ]
